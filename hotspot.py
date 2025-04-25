@@ -71,7 +71,6 @@
 
 
 
-
 import pandas as pd
 import dash
 from dash import dcc, html, Input, Output
@@ -182,9 +181,8 @@ def update_graph(selected_year):
 
 # ---- Run Dash Server ----
 if __name__ == '__main__':
-    app.run_server(debug=True)
-
-
+    port = int(os.environ.get("PORT", 8080))  # Default to 8080 if PORT is not set
+    app.run_server(debug=True, host='0.0.0.0', port=port)
 
 # THE ABOVE IS GOOD SHOWING MARKERS SAVE IT FOR LATER USE
 
