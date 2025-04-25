@@ -81,9 +81,10 @@ import plotly.express as px
 import os
 
 # ---- Load Cleaned HWC Data ----
-data_dir = "D:/HWC/"
-path = os.path.join(data_dir, "CLEANED_Land_for_Life_HWC.csv")
+
+path = "./assets/CLEANED_Land_for_Life_HWC.csv"
 df = pd.read_csv(path)
+
 
 # Drop rows with missing coordinates
 df = df.dropna(subset=['latitude', 'longitude', 'date'])
