@@ -122,7 +122,7 @@ app.layout = html.Div([
         html.Div([
             dcc.Graph(id="monthly-trend-graph"),
         ], style={'width': '48%', 'display': 'inline-block', 'vertical-align': 'top'})
-    ], style={'display': 'flex', 'justify-content': 'space-between'})
+    ], style={'display': 'flex', 'flex-direction': 'column','justify-content': 'space-between'})
 ])
 
 # ---- Callback for Heatmap ----
