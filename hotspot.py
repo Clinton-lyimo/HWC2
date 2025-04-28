@@ -96,7 +96,7 @@ def update_graph(selected_year):
         x="month",
         y="incident_count",
         markers=True,
-        title=f"📈 MCT in {selected_year}",
+        title=f"📈 Monthly Conflict Trends in {selected_year}",
         labels={"month": "Month", "incident_count": "Total Incidents"}
     )
 
