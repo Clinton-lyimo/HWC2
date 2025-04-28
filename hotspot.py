@@ -96,13 +96,13 @@ def update_graph(selected_year):
         x="month",
         y="incident_count",
         markers=True,
-        title=f"📈 Monthly Conflict Trends in {selected_year}",
+        title=f"📈 MCT in {selected_year}",
         labels={"month": "Month", "incident_count": "Total Incidents"}
     )
 
     fig.update_layout(
         xaxis=dict(tickmode="array", tickvals=list(month_names.values())),
-        margin={"r":0,"t":40,"l":0,"b":0},
+        margin={"r":5,"t":40,"l":5,"b":0},
         height=450
     )
 
